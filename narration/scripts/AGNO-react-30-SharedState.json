@@ -13,7 +13,7 @@
   },
   {
    "at": "demo",
-   "text": "Moving on to the demo. So the page crashes, umm, card is not defined, because the snippets use components that are never shown."
+   "text": "Moving on to the demo. So the page never works, umm, Next shows a blocking route error, unstable value random UUID, and the notes card throws card is not defined."
   },
   {
    "at": "+",

@@ -35,7 +35,7 @@ Stack: `@copilotkit/react-core`/`react-ui`/`runtime` 1.87.1 (declared ^1.87.1), 
 ### [Shared State](https://docs.copilotkit.ai/agno/shared-state)
 **#12 The page is fragments only and shows no Agno agent.**
 - **Doc:** `<Card data-testid=...>` with `Card`, `CardHeader`, `Button`, `NotesCardProps`, `RWAgentState` never imported or defined; no Agno agent with the `set_notes` tool.
-- **Error:** `Card is not defined`; the page crashes. (Team doc: ❌.)
+- **Error:** on screen a Next.js Blocking Route overlay (`Next.js encountered the unstable value require('node:crypto').randomUUID() in a Client Component`, at the page's CopilotKit provider, see #3); in the console `Card is not defined` from NotesCard. The page never works. (Team doc: ❌.)
 
 ### [Render agent state in your app](https://docs.copilotkit.ai/agno/shared-state/rendering-in-app)
 **#13 The agent never sees or changes the app state.**

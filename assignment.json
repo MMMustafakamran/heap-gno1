@@ -1038,7 +1038,7 @@
     12
    ],
    "notes": [
-    "Issue: the snippets are fragments (Card, CardHeader, Button, NotesCardProps never defined); the page crashes with \"Card is not defined\" and there is no Agno agent."
+    "Issue: the page never works: Next.js Blocking Route error (randomUUID in the CopilotKit provider) on screen, and the snippets are fragments (Card, CardHeader, Button, NotesCardProps never defined: \"Card is not defined\")."
    ],
    "block": null,
    "links": [
