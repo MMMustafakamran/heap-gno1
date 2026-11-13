@@ -26,15 +26,18 @@ const runHeadlessUiAction: PageActionHandler = async (page, config, _root, ctx) 
 
 /** programmatic-control: click the doc's "Run Agent" button; the dashboard shows the run (Running, then 2 messages + reply). */
 const runProgrammaticControlAction: PageActionHandler = async (page, config, _root, ctx) => {
-  mark('click', 'Run Agent');
-  await glideClick(page, page.getByRole('button', { name: 'Run Agent' }));
-  const agentRow = page.locator('div.font-semibold', { hasText: /^Agent$/ });
-  const ok = await agentRow.first().waitFor({ state: 'visible', timeout: 60000 }).then(() => true).catch(() => false);
-  await page.getByText('Idle', { exact: true }).waitFor({ state: 'visible', timeout: 60000 }).catch(() => {});
-  void checkpoint('reply', 'the dashboard conversation shows the agent reply', () => (ok ? probeText(page.locator('text=Messages:').first()) : null));
-  if (!ok) ctx.fail('copilotkit.runAgent() produced no agent message in the dashboard.');
-  await sleep(config.waitAfterPromptMs ?? 3000);
-  await writeFinding(page, config.id, config);
+  try {
+    mark('click', 'Run Agent');
+    await glideClick(page, page.getByRole('button', { name: 'Run Agent' }));
+    const agentRow = page.locator('div.font-semibold', { hasText: /^Agent$/ });
+    const ok = await agentRow.first().waitFor({ state: 'visible', timeout: 60000 }).then(() => true).catch(() => false);
+    void checkpoint('reply', 'the dashboard conversation shows the agent reply', () => (ok ? probeText(page.locator('text=Messages:').first()) : null));
+    await sleep(config.waitAfterPromptMs ?? 3000);
+    if (!ok) ctx.fail('copilotkit.runAgent() produced no agent message in the dashboard.');
+  } finally {
+    // The finding (evidence + Notepad) must run even when the take fails (FINDINGS.md #19).
+    await writeFinding(page, config.id, config);
+  }
 };
 
 /** reasoning: the reply must come with the custom reasoning block (data-testid="reasoning-block"); then the finding. */
