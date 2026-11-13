@@ -633,7 +633,7 @@
     10
    ],
    "notes": [
-    "Issue: the featured products row renders with empty items (no name, no image, $0)."
+    "Issue: the featured products surface often shows empty products or $0."
    ],
    "block": null,
    "links": [
@@ -796,9 +796,13 @@
    "child": true,
    "docPath": "generative-ui/components/markdown-mode",
    "reachable": "sidebar",
-   "status": "✅",
-   "findings": [],
-   "notes": [],
+   "status": "❌",
+   "findings": [
+    20
+   ],
+   "notes": [
+    "Issue: no Agno step for putting the context entries into the system prompt; the agent mostly replies in plain text and no surface renders."
+   ],
    "block": null,
    "links": [
     {
@@ -1328,9 +1332,13 @@
    "child": true,
    "docPath": "programmatic-control",
    "reachable": "sidebar",
-   "status": "✅",
-   "findings": [],
-   "notes": [],
+   "status": "❌",
+   "findings": [
+    19
+   ],
+   "notes": [
+    "Issue: clicking \"Run Agent\" (addMessage + copilotkit.runAgent) never runs the agent: Messages stays 0; the console shows a hydration error."
+   ],
    "block": null,
    "links": [
     {

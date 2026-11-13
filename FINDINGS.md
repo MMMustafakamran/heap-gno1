@@ -29,8 +29,8 @@ Stack: `@copilotkit/react-core`/`react-ui`/`runtime` 1.87.1 (declared ^1.87.1), 
 - **Result:** the agent answers about the SFO → JFK flight, but the fixed-schema card never shows the airports, airline and price. (Team doc: ❌.)
 
 ### [Surfaces](https://docs.copilotkit.ai/agno/generative-ui/components/surfaces)
-**#10 The featured products surface renders with empty items.**
-- **Result:** "Featured Products / Affordable running shoes" renders, every item has no name, a broken image and `$0`. (Team doc: ❌.)
+**#10 The featured products surface is unreliable: products often show empty or `$0`.**
+- **Result:** the "Featured Products" surface renders, but in most runs its items are missing or show no name, a broken image and `$0`; some runs fill it correctly. (Team doc: ❌.)
 
 ### [Shared State](https://docs.copilotkit.ai/agno/shared-state)
 **#12 The page is fragments only and shows no Agno agent.**
@@ -51,6 +51,16 @@ Stack: `@copilotkit/react-core`/`react-ui`/`runtime` 1.87.1 (declared ^1.87.1), 
 **#15 The Code tab imports four files that no tab shows; the agent server imports unshown modules.**
 - **Doc:** Code-tab `page.tsx` imports `./subagent-activity-card`, `./demo-layout`, `./active-subagent`, `./suggestions`; the delegation log uses `SUB_AGENT_STYLE[subAgent]` and a props type never defined; `agent_server.py` imports unshown modules.
 - **Error:** `Module not found: Can't resolve './subagent-activity-card'` (also `./active-subagent`); the page never loads. (Team doc: ✅.)
+
+### [Programmatic Control](https://docs.copilotkit.ai/agno/programmatic-control)
+**#19 "Run Agent" never runs the agent.**
+- **Doc:** `agent.addMessage({ ... })` then `await copilotkit.runAgent({ agent });` in `AgentTrigger`, next to the dashboard.
+- **Result:** clicking "Run Agent" leaves the dashboard at "Idle", "Messages: 0", empty conversation (2 CI takes, 2 local checks); the console shows `Hydration failed because the server rendered text didn't match the client`. (Team doc: ✅.)
+
+### [Markdown mode](https://docs.copilotkit.ai/agno/generative-ui/components/markdown-mode)
+**#20 No Agno step for the context entries; the agent mostly replies in plain text.**
+- **Doc:** "The chat renders each block as a live surface"; for agents other than the built-in one and LangGraph Python: "Any other agent needs one thing: put the run's context entries into its system prompt." No Agno code.
+- **Result:** with the doc's provider (`transport: "markdown"`) on the quickstart Agno agent, most runs answer in plain text ("I don't have the plan details…") with no `a2ui` block and no surface; one take in four rendered a table. (Team doc: ✅.)
 
 ## Minor notes
 - **#1** [Quickstart](https://docs.copilotkit.ai/agno/quickstart): `uv add agno fastapi uvicorn openai ag-ui-protocol` omits `python-multipart`; AgentOS fails to start until `uv add python-multipart` (team doc has the same note).

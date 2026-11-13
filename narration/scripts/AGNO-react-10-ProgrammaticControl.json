@@ -1,0 +1,43 @@
+{
+ "clip": "AGNO-react-10-ProgrammaticControl",
+ "finding": "agno-react ProgrammaticControl",
+ "level": 1,
+ "segments": [
+  {
+   "at": "doc",
+   "text": "Ok so, this is the programmatic control page in the CopilotKit docs, for Agno with React. And I have implemented this page in my project."
+  },
+  {
+   "at": "ide",
+   "text": "This is my project, this is the exact code from the doc."
+  },
+  {
+   "at": "demo",
+   "text": "Moving on to the demo. So after clicking run agent, umm, nothing happens."
+  },
+  {
+   "at": "+",
+   "text": "The dashboard stays idle and the message count stays at zero."
+  },
+  {
+   "at": "evidence#1",
+   "text": "So this is the add message call the trigger makes."
+  },
+  {
+   "at": "evidence#2",
+   "text": "And this is the run agent call that never runs."
+  },
+  {
+   "at": "notepad",
+   "text": "Basically, the button adds a message and calls run agent, but the agent never runs, and uh, the console shows a hydration error."
+  },
+  {
+   "at": "+",
+   "text": "And the page gives no hint why."
+  },
+  {
+   "at": "+",
+   "text": "So yeah, please take a look and fix this."
+  }
+ ]
+}

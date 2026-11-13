@@ -34,6 +34,7 @@ const runProgrammaticControlAction: PageActionHandler = async (page, config, _ro
   void checkpoint('reply', 'the dashboard conversation shows the agent reply', () => (ok ? probeText(page.locator('text=Messages:').first()) : null));
   if (!ok) ctx.fail('copilotkit.runAgent() produced no agent message in the dashboard.');
   await sleep(config.waitAfterPromptMs ?? 3000);
+  await writeFinding(page, config.id, config);
 };
 
 /** reasoning: the reply must come with the custom reasoning block (data-testid="reasoning-block"); then the finding. */

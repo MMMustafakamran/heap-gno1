@@ -1,0 +1,43 @@
+{
+ "clip": "AGNO-react-23-GenUiMarkdownMode",
+ "finding": "agno-react GenUiMarkdownMode",
+ "level": 1,
+ "segments": [
+  {
+   "at": "doc",
+   "text": "Ok so, this is the markdown mode page in the CopilotKit docs, for Agno with React. And I have implemented this page in my project."
+  },
+  {
+   "at": "ide",
+   "text": "This is my project, this is the exact code from the doc."
+  },
+  {
+   "at": "demo",
+   "text": "Moving on to the demo. So the agent just answers in plain text."
+  },
+  {
+   "at": "+",
+   "text": "No surface shows up in the chat."
+  },
+  {
+   "at": "evidence#1",
+   "text": "The page says the chat renders each block as a live surface."
+  },
+  {
+   "at": "evidence#2",
+   "text": "And for other agents it only says, umm, put the context into the system prompt."
+  },
+  {
+   "at": "notepad",
+   "text": "Basically, there is no Agno code for that step, so most of the time the agent never writes the UI block."
+  },
+  {
+   "at": "+",
+   "text": "Sometimes a table shows up, but uh, mostly nothing."
+  },
+  {
+   "at": "+",
+   "text": "That's it for this one, kindly look into this issue."
+  }
+ ]
+}

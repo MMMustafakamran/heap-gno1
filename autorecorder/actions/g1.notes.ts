@@ -6,6 +6,13 @@
 import { type DocEvidence } from './doc-evidence';
 
 export const NOTES_G1: Record<string, string> = {
+  'programmatic-control': [
+    'programmatic control page, agent trigger does agent.addMessage then copilotkit.runAgent',
+    'clicked run agent and nothing happens,dashboard stays idle and messages 0',
+    'console shows hydration failed,server rendered text didnt match the client',
+    'so the run agent button never does anything and no agent message ever shows',
+    'page gives no hint why or how to fix it',
+  ].join('\n'),
   // QA-RULES 7 by analogy (temperature-only -> reasoning_effort-only): working clip on the FIX copy + short note.
   'gen-ui-tool-based': [
     'reasoning effort issue',
@@ -29,6 +36,10 @@ export const NOTES_G1: Record<string, string> = {
 };
 
 export const EVIDENCE_G1: Record<string, DocEvidence[]> = {
+  'programmatic-control': [
+    { text: 'agent.addMessage({', caption: 'the trigger adds a user message, but Messages stays 0' },
+    { text: 'await copilotkit.runAgent({ agent });', caption: 'Run Agent never runs the agent (hydration error)' },
+  ],
   'gen-ui-tool-based': [
     { text: 'model=OpenAIChat(id="gpt-6-luna"),', caption: 'No reasoning_effort="none": 400 Function tools with reasoning_effort are not supported' },
   ],

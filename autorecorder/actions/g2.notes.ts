@@ -6,6 +6,13 @@
 import { type DocEvidence } from './doc-evidence';
 
 export const NOTES_G2: Record<string, string> = {
+  'gen-ui-markdown-mode': [
+    'markdown mode page, provider set to transport markdown like it says',
+    'runtime is the quickstart agno agent,page only says any other agent has to put the context entries in its system prompt',
+    'no agno code for that anywhere',
+    'so most runs the agent just answers in plain text,no a2ui block and no surface in the chat',
+    'once in a while it shows a table but mostly nothing',
+  ].join('\n'),
   a2ui: [
     'page says pass a2ui {} to the runtime and any a2ui output from ur agent shows up in the chat',
     'but agents default myAgent is never defined and theres no agno agent code at all',
@@ -23,6 +30,10 @@ export const NOTES_G2: Record<string, string> = {
 };
 
 export const EVIDENCE_G2: Record<string, DocEvidence[]> = {
+  'gen-ui-markdown-mode': [
+    { text: 'The chat renders each block as a live surface', caption: 'promised surfaces; the Agno agent mostly replies in plain text' },
+    { text: "Any other agent needs one thing: put the run's context entries into its system prompt.", caption: 'no Agno code for this step' },
+  ],
   a2ui: [
     { text: 'agents: { default: myAgent },', caption: 'myAgent is never defined; no Agno agent code on the page' },
     { text: 'any A2UI output returned from your agent will automatically be rendered', caption: 'The Agno agent produces no A2UI; nothing renders' },
