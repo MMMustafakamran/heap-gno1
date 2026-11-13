@@ -28,7 +28,7 @@ export const FINDING_EVIDENCE: Record<string, DocEvidence[]> = { ...EVIDENCE_G0,
 /** Level-2 pages (already reported by the team): clip ends after the demo. */
 // Level 2 (QA-RULES §8a): the team doc already reports these pages failing the same way; the clip ends after the demo.
 export const KNOWN_ISSUE = new Set<string>([
-  'gen-ui-surfaces', 'gen-ui-state-actions', 'a2ui-fixed-schema',
+  'gen-ui-surfaces', 'a2ui-fixed-schema',
   'shared-state', 'shared-state-rendering-in-app', 'shared-state-agent-readonly',
 ]);
 

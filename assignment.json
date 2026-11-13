@@ -713,12 +713,10 @@
    "child": true,
    "docPath": "generative-ui/components/state-and-actions",
    "reachable": "sidebar",
-   "status": "❌",
-   "findings": [
-    11
-   ],
+   "status": "✅",
+   "findings": [],
    "notes": [
-    "Issue: the product card renders but \"Add to cart\" does nothing; the cart stays empty."
+    "Note: now working (team doc had ❌): \"Add to cart\" updates the cart."
    ],
    "block": null,
    "links": [
@@ -987,19 +985,13 @@
    "child": true,
    "docPath": "generative-ui/mcp-apps",
    "reachable": "sidebar",
-   "status": "✅",
+   "status": "N/A",
    "findings": [],
-   "notes": [],
-   "block": null,
-   "links": [
-    {
-     "text": null,
-     "clip": "AGNO-react-28-GenUiMcpApps",
-     "loom": null,
-     "narration": null,
-     "filmed": null
-    }
+   "notes": [
+    "Note: not tested yet: the page needs a running example MCP server (github.com/modelcontextprotocol/ext-apps); starting one locally was not permitted, so the doc's localhost:3108 server is missing."
    ],
+   "block": null,
+   "links": [],
    "review": {
     "verdict": null,
     "approvedAt": null,

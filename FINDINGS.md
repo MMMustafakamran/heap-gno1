@@ -32,10 +32,6 @@ Stack: `@copilotkit/react-core`/`react-ui`/`runtime` 1.87.1 (declared ^1.87.1), 
 **#10 The featured products surface renders with empty items.**
 - **Result:** "Featured Products / Affordable running shoes" renders, every item has no name, a broken image and `$0`. (Team doc: ❌.)
 
-### [State and actions](https://docs.copilotkit.ai/agno/generative-ui/components/state-and-actions)
-**#11 "Add to cart" does nothing.**
-- **Result:** the ProductCard renders, clicking "Add to cart" leaves `Cart: empty`. (Team doc: ❌, "No useGenerativeUIFunction handler is mounted".)
-
 ### [Shared State](https://docs.copilotkit.ai/agno/shared-state)
 **#12 The page is fragments only and shows no Agno agent.**
 - **Doc:** `<Card data-testid=...>` with `Card`, `CardHeader`, `Button`, `NotesCardProps`, `RWAgentState` never imported or defined; no Agno agent with the `set_notes` tool.

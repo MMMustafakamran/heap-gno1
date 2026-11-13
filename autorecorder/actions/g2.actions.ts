@@ -30,14 +30,15 @@ async function settle(page: Page, msgCount: number, ctx: ActionContext): Promise
  * Generative UI take: the reply must render a surface (in the chat, or in the page target
  * `within`), with no "Unable to display" card. Otherwise the take fails, then the finding (if any).
  */
-function surfaceAction(opts: { within?: string; expectText?: RegExp; what: string; timeoutMs?: number }): PageActionHandler {
+function surfaceAction(opts: { within?: string; expectText?: RegExp; what: string; timeoutMs?: number; selector?: string }): PageActionHandler {
   return async (page, config, _root, ctx) => {
     try {
       const msgCount = await sendPrompt(page, config.prompt, { timeoutMs: 15000 });
       const scope = opts.within ? page.locator(opts.within) : page.locator('body');
-      const surface = scope.locator(SURFACE).last();
+      const surface = scope.locator(opts.selector ?? SURFACE).last();
       const shown = await surface.waitFor({ state: 'visible', timeout: opts.timeoutMs ?? 120000 }).then(() => true).catch(() => false);
-      await settle(page, msgCount, ctx);
+      // A rendered surface has no text reply to wait for: settling would hold a still frame for a minute.
+      if (shown) await sleep(4000); else await settle(page, msgCount, ctx);
       await sleep(1500);
       const errorCard = page.getByText(ERROR_CARD, { exact: false }).first();
       const broken = await errorCard.isVisible().catch(() => false);
@@ -99,7 +100,7 @@ export const ACTIONS_G2: Record<string, PageActionHandler> = {
   'gen-ui-state-actions': stateActionsAction,
   'gen-ui-theming': surfaceAction({ what: 'themed card in the chat' }),
   'gen-ui-transports': surfaceAction({ what: 'surface in the chat' }),
-  'gen-ui-markdown-mode': surfaceAction({ what: 'surface written in the markdown reply' }),
+  'gen-ui-markdown-mode': surfaceAction({ what: 'surface written in the markdown reply', selector: `${SURFACE}, table` }),
   'a2ui': surfaceAction({ what: 'A2UI surface in the chat' }),
   'a2ui-dynamic-schema': runRouteErrorWithFinding,
   'a2ui-fixed-schema': runFixedSchemaWithFinding,
