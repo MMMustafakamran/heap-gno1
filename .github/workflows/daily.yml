@@ -342,8 +342,7 @@ jobs:
           set -eu
           [ -n "${OPENAI_API_KEY:-}" ] || echo "::warning::secret OPENAI_API_KEY is not set; the Agno agents will fail"
           # The doc says `export OPENAI_API_KEY=...`; HARNESS: start-all.sh loads backend/.env with uv --env-file.
-          printf 'OPENAI_API_KEY=%s
-' "$OPENAI_API_KEY" > backend/.env
+          printf 'OPENAI_API_KEY=%s\n' "$OPENAI_API_KEY" > backend/.env
           # The quickstart runtime reads CPK_INTELLIGENCE_API_KEY from frontend/.env (doc).
           : > frontend/.env
           if [ -n "${CPK_INTELLIGENCE_API_KEY:-}" ]; then printf 'CPK_INTELLIGENCE_API_KEY=%s\n' "$CPK_INTELLIGENCE_API_KEY" >> frontend/.env; else echo "::warning::secret CPK_INTELLIGENCE_API_KEY is not set"; fi
