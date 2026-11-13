@@ -1,0 +1,23 @@
+{
+ "clip": "AGNO-react-30-SharedState",
+ "finding": "agno-react SharedState",
+ "level": 2,
+ "segments": [
+  {
+   "at": "doc",
+   "text": "Ok so, this is the shared state page in the CopilotKit docs, for Agno with React. And I have implemented this page in my project."
+  },
+  {
+   "at": "ide",
+   "text": "This is my project, this is the code from the doc."
+  },
+  {
+   "at": "demo",
+   "text": "Moving on to the demo. So the page crashes, umm, card is not defined, because the snippets use components that are never shown."
+  },
+  {
+   "at": "+",
+   "text": "So this needs a fix, kindly check it."
+  }
+ ]
+}

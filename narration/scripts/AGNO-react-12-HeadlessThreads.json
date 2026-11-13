@@ -1,0 +1,39 @@
+{
+ "clip": "AGNO-react-12-HeadlessThreads",
+ "finding": "agno-react HeadlessThreads",
+ "level": 1,
+ "segments": [
+  {
+   "at": "doc",
+   "text": "Ok so, this is the headless threads page in the CopilotKit docs, for Agno with React. And I have implemented this page in my project."
+  },
+  {
+   "at": "ide",
+   "text": "This is my project, this is the exact code from the doc."
+  },
+  {
+   "at": "demo",
+   "text": "Moving on to the demo. So I chatted a bit and then looked for the thread list."
+  },
+  {
+   "at": "+",
+   "text": "The chat replies, but umm, the list stays empty and no thread can be opened."
+  },
+  {
+   "at": "evidence#1",
+   "text": "This is the use threads call with my agent, while the chat runs on default."
+  },
+  {
+   "at": "notepad",
+   "text": "So basically, use threads asks a different agent than the chat, so the list never fills."
+  },
+  {
+   "at": "+",
+   "text": "And uh, the thread sidebar never calls on select thread, so opening a thread can't work either."
+  },
+  {
+   "at": "+",
+   "text": "So yeah, kindly check this and fix it."
+  }
+ ]
+}

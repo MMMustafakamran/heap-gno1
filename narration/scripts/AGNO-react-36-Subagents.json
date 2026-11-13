@@ -1,0 +1,39 @@
+{
+ "clip": "AGNO-react-36-Subagents",
+ "finding": "agno-react Subagents",
+ "level": 1,
+ "segments": [
+  {
+   "at": "doc",
+   "text": "Ok so, this is the sub agents page in the CopilotKit docs, for Agno with React. And I have implemented this page in my project."
+  },
+  {
+   "at": "ide",
+   "text": "This is my project, this is the exact code from the doc, umm, the page file from the Code tab and the agent."
+  },
+  {
+   "at": "demo",
+   "text": "Moving on to the demo. So the page doesn't load at all."
+  },
+  {
+   "at": "+",
+   "text": "Next shows module not found for one of the files the page imports."
+  },
+  {
+   "at": "evidence#1",
+   "text": "And this style map here is never defined anywhere either."
+  },
+  {
+   "at": "notepad",
+   "text": "So basically, the page file in the Code tab imports four files, the activity card, demo layout, active sub agent and suggestions, and uh, none of them are shown."
+  },
+  {
+   "at": "+",
+   "text": "And the agent server also imports a bunch of modules that aren't on the page."
+  },
+  {
+   "at": "+",
+   "text": "So umm, this one needs fixing, please look into it."
+  }
+ ]
+}

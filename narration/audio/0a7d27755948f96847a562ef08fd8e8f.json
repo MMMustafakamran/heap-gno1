@@ -1,0 +1,9 @@
+{
+ "text": "The agent just says it can't render a card here, and no A2UI surface ever shows up.",
+ "model": "s2.1-pro-free",
+ "refSha256": "2c9d0ecf4608feacc07c88e869cd4dec601481306a939b7be92fc1bff521a727",
+ "duration": 6.13,
+ "file": "0a7d27755948f96847a562ef08fd8e8f.mp3",
+ "clip": "AGNO-react-25-A2ui",
+ "at": "+"
+}

@@ -1,0 +1,9 @@
+{
+ "text": "The quickstart agent has reasoning turned off, so uh, the card never shows.",
+ "model": "s2.1-pro-free",
+ "refSha256": "2c9d0ecf4608feacc07c88e869cd4dec601481306a939b7be92fc1bff521a727",
+ "duration": 5.666,
+ "file": "639d8d337a4208a9ff370f281a11a8ca.mp3",
+ "clip": "AGNO-react-37-Reasoning",
+ "at": "+"
+}

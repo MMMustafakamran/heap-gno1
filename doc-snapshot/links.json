@@ -1,0 +1,285 @@
+{
+ "root": "agno",
+ "savedAt": "2026-11-13",
+ "pages": {
+  "/agno/prebuilt-components": [],
+  "/agno/custom-look-and-feel/headless-ui": [],
+  "/agno/quickstart": [
+   "/agno/frontend-tools",
+   "/agno/generative-ui/tool-rendering",
+   "/agno/human-in-the-loop",
+   "/agno/inspector",
+   "/agno/intelligence/quickstart"
+  ],
+  "/agno": [],
+  "/agno/custom-look-and-feel/slots": [
+   "/agno/custom-look-and-feel/markdown"
+  ],
+  "/agno/build-with-agents": [],
+  "/agno/prebuilt-components/copilot-threads-drawer": [
+   "/agno/AG-UI-Streams",
+   "/agno/headless-threads",
+   "/agno/migrate/v2",
+   "/agno/prebuilt-components/chat",
+   "/agno/threads-lifecycle"
+  ],
+  "/agno/programmatic-control": [],
+  "/agno/headless-threads": [
+   "/agno/intelligence/quickstart",
+   "/agno/intelligence/self-hosting",
+   "/agno/intelligence/threads-explained",
+   "/agno/prebuilt-components/copilot-threads-drawer",
+   "/agno/threads-import",
+   "/agno/threads-lifecycle"
+  ],
+  "/agno/frontend-tools": [
+   "/agno/frontend-tools",
+   "/agno/human-in-the-loop"
+  ],
+  "/agno/generative-ui/tool-based": [
+   "/agno/custom-look-and-feel/headless-ui",
+   "/agno/generative-ui/tool-rendering",
+   "/agno/human-in-the-loop"
+  ],
+  "/agno/generative-ui/tool-rendering": [],
+  "/agno/generative-ui/state-rendering": [],
+  "/agno/generative-ui/components": [
+   "/agno/generative-ui/components/catalogs",
+   "/agno/generative-ui/components/from-a2ui",
+   "/agno/generative-ui/components/markdown-mode",
+   "/agno/generative-ui/components/state-and-actions",
+   "/agno/generative-ui/components/surfaces",
+   "/agno/generative-ui/components/theming",
+   "/agno/generative-ui/components/transports",
+   "/agno/inspector",
+   "/agno/react-native"
+  ],
+  "/agno/generative-ui/components/surfaces": [
+   "/agno/generative-ui/components",
+   "/agno/generative-ui/components/catalogs",
+   "/agno/react-native"
+  ],
+  "/agno/generative-ui/components/catalogs": [
+   "/agno/generative-ui/components",
+   "/agno/generative-ui/components/state-and-actions"
+  ],
+  "/agno/generative-ui/components/standard-catalog": [
+   "/agno/generative-ui/components/catalogs",
+   "/agno/generative-ui/components/theming",
+   "/agno/react-native"
+  ],
+  "/agno/generative-ui/components/state-and-actions": [
+   "/agno/react-native"
+  ],
+  "/agno/generative-ui/components/theming": [
+   "/agno/react-native"
+  ],
+  "/agno/generative-ui/components/transports": [
+   "/agno/generative-ui/components/markdown-mode"
+  ],
+  "/agno/generative-ui/components/markdown-mode": [
+   "/agno/generative-ui/components/state-and-actions",
+   "/agno/generative-ui/components/surfaces",
+   "/agno/generative-ui/components/transports"
+  ],
+  "/agno/generative-ui/a2ui/dynamic-schema": [
+   "/agno/generative-ui/a2ui/fixed-schema"
+  ],
+  "/agno/generative-ui/components/from-a2ui": [
+   "/agno/generative-ui/components/catalogs",
+   "/agno/generative-ui/components/markdown-mode",
+   "/agno/generative-ui/components/state-and-actions",
+   "/agno/generative-ui/components/surfaces"
+  ],
+  "/agno/generative-ui/a2ui": [
+   "/agno/agentic-protocols/ag-ui",
+   "/agno/concepts/generative-ui-overview",
+   "/agno/generative-ui/mcp-apps",
+   "/agno/generative-ui/tool-based",
+   "/agno/runtime-server-adapter"
+  ],
+  "/agno/generative-ui/a2ui/fixed-schema": [
+   "/agno/generative-ui/a2ui/dynamic-schema"
+  ],
+  "/agno/generative-ui/json-render": [
+   "/agno/generative-ui/hashbrown"
+  ],
+  "/agno/generative-ui/hashbrown": [
+   "/agno/generative-ui/json-render"
+  ],
+  "/agno/generative-ui/mcp-apps": [
+   "/agno/generative-ui/mcp-apps"
+  ],
+  "/agno/generative-ui/open-generative-ui": [
+   "/agno/frontend-tools"
+  ],
+  "/agno/shared-state": [
+   "/agno/inspector",
+   "/agno/shared-state/agent-readonly",
+   "/agno/shared-state/rendering-in-app",
+   "/agno/shared-state/streaming"
+  ],
+  "/agno/shared-state/rendering-in-app": [
+   "/agno/shared-state",
+   "/agno/shared-state/agent-readonly",
+   "/agno/shared-state/streaming"
+  ],
+  "/agno/shared-state/agent-readonly": [
+   "/agno/inspector",
+   "/agno/shared-state",
+   "/agno/shared-state/streaming"
+  ],
+  "/agno/shared-state/streaming": [
+   "/agno/shared-state",
+   "/agno/shared-state/agent-readonly"
+  ],
+  "/agno/human-in-the-loop": [
+   "/agno/frontend-tools"
+  ],
+  "/agno/human-in-the-loop/useInterrupt": [
+   "/agno/human-in-the-loop",
+   "/agno/human-in-the-loop/headless"
+  ],
+  "/agno/human-in-the-loop/headless": [
+   "/agno/human-in-the-loop",
+   "/agno/human-in-the-loop/useInterrupt"
+  ],
+  "/agno/human-in-the-loop/governed-actions": [
+   "/agno/frontend-tools",
+   "/agno/human-in-the-loop",
+   "/agno/human-in-the-loop/useInterrupt"
+  ],
+  "/agno/webmcp": [
+   "/agno/frontend-tools"
+  ],
+  "/agno/multi-agent/subagents": [
+   "/agno/shared-state",
+   "/agno/shared-state/streaming"
+  ],
+  "/agno/AG-UI-Streams": [
+   "/agno/headless-threads",
+   "/agno/inspector",
+   "/agno/intelligence/bring-your-own-thread-system",
+   "/agno/intelligence/managed-intelligence-platform",
+   "/agno/intelligence/quickstart",
+   "/agno/intelligence/self-hosting",
+   "/agno/intelligence/threads-explained",
+   "/agno/prebuilt-components/copilot-threads-drawer",
+   "/agno/threads-import",
+   "/agno/threads-lifecycle"
+  ],
+  "/agno/threads-lifecycle": [
+   "/agno/auth",
+   "/agno/headless-threads",
+   "/agno/intelligence/bring-your-own-thread-system",
+   "/agno/intelligence/quickstart",
+   "/agno/intelligence/threads-explained",
+   "/agno/threads-import"
+  ],
+  "/agno/threads-import": [
+   "/agno/headless-threads",
+   "/agno/intelligence/bring-your-own-thread-system",
+   "/agno/intelligence/managed-intelligence-platform",
+   "/agno/intelligence/quickstart",
+   "/agno/intelligence/self-hosting",
+   "/agno/intelligence/threads-explained",
+   "/agno/prebuilt-components/copilot-threads-drawer"
+  ],
+  "/agno/learning": [
+   "/agno/AG-UI-Streams",
+   "/agno/cli",
+   "/agno/inspector",
+   "/agno/intelligence/capture-interactions",
+   "/agno/intelligence/learned-skills",
+   "/agno/intelligence/memories",
+   "/agno/intelligence/overview",
+   "/agno/intelligence/quickstart",
+   "/agno/intelligence/threads-explained"
+  ],
+  "/agno/copilot-runtime": [
+   "/agno/AG-UI-Streams",
+   "/agno/backend/runtime-endpoints",
+   "/agno/inspector",
+   "/agno/intelligence/managed-intelligence-platform",
+   "/agno/intelligence/quickstart",
+   "/agno/intelligence/self-hosting",
+   "/agno/quickstart",
+   "/agno/troubleshooting/error-reference"
+  ],
+  "/agno/ag-ui": [
+   "/agno/backend/custom-ag-ui-agent"
+  ],
+  "/agno/inspector": [
+   "/agno/AG-UI-Streams",
+   "/agno/agent-config",
+   "/agno/agentic-protocols/ag-ui",
+   "/agno/backend/copilot-runtime",
+   "/agno/backend/runtime-endpoints",
+   "/agno/frontend-tools",
+   "/agno/headless-threads",
+   "/agno/intelligence/quickstart",
+   "/agno/learning",
+   "/agno/quickstart",
+   "/agno/shared-state/agent-readonly",
+   "/agno/troubleshooting/debug-mode",
+   "/agno/troubleshooting/error-debugging"
+  ],
+  "/agno/contributing/code-contributions": [
+   "/agno/contributing/code-contributions/package-linking"
+  ],
+  "/agno/contributing/docs-contributions": [],
+  "/agno/troubleshooting/migrate-to-v2": [
+   "/agno/custom-look-and-feel/slots"
+  ],
+  "/agno/troubleshooting/error-debugging": [
+   "/agno/troubleshooting/debug-mode",
+   "/agno/troubleshooting/event-inspector"
+  ],
+  "/agno/troubleshooting/migrate-to-1.10.X": [
+   "/agno/intelligence/headless-ui"
+  ],
+  "/agno/community-frameworks": [],
+  "/agno/troubleshooting/migrate-to-1.8.2": [],
+  "/agno/telemetry": [],
+  "/agno/troubleshooting/common-issues": [
+   "/agno/quickstart"
+  ],
+  "/agno/prebuilt-components/chat": [
+   "/agno/custom-look-and-feel/css",
+   "/agno/custom-look-and-feel/headless-ui",
+   "/agno/custom-look-and-feel/slots",
+   "/agno/headless-threads",
+   "/agno/migrate/v2",
+   "/agno/prebuilt-components/copilot-threads-drawer",
+   "/agno/prebuilt-components/popup",
+   "/agno/prebuilt-components/sidebar"
+  ],
+  "/agno/prebuilt-components/sidebar": [
+   "/agno/custom-look-and-feel/slots",
+   "/agno/migrate/v2",
+   "/agno/prebuilt-components/chat",
+   "/agno/prebuilt-components/copilot-threads-drawer",
+   "/agno/prebuilt-components/popup"
+  ],
+  "/agno/custom-look-and-feel/css": [
+   "/agno/custom-look-and-feel/headless-ui",
+   "/agno/custom-look-and-feel/slots"
+  ],
+  "/agno/custom-look-and-feel/markdown": [
+   "/agno/custom-look-and-feel/slots",
+   "/agno/generative-ui/tool-rendering"
+  ],
+  "/agno/prebuilt-components/popup": [
+   "/agno/custom-look-and-feel/slots",
+   "/agno/migrate/v2",
+   "/agno/prebuilt-components/chat",
+   "/agno/prebuilt-components/sidebar"
+  ],
+  "/agno/generative-ui/reasoning": [],
+  "/agno/human-in-the-loop/index": [
+   "/agno/human-in-the-loop/headless",
+   "/agno/human-in-the-loop/useInterrupt",
+   "/agno/inspector"
+  ]
+ }
+}

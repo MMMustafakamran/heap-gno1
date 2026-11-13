@@ -1,0 +1,23 @@
+{
+ "clip": "AGNO-react-27-A2uiFixedSchema",
+ "finding": "agno-react A2uiFixedSchema",
+ "level": 2,
+ "segments": [
+  {
+   "at": "doc",
+   "text": "Ok so, this is the fixed schema A2UI page in the CopilotKit docs, for Agno with React. And I have implemented this page in my project."
+  },
+  {
+   "at": "ide",
+   "text": "This is my project, this is the code from the doc."
+  },
+  {
+   "at": "demo",
+   "text": "Moving on to the demo. So the agent answers about the flight, but uh, the flight card never shows the airports, airline and price."
+  },
+  {
+   "at": "+",
+   "text": "So kindly look into it."
+  }
+ ]
+}

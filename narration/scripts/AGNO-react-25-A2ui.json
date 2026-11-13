@@ -1,0 +1,43 @@
+{
+ "clip": "AGNO-react-25-A2ui",
+ "finding": "agno-react A2ui",
+ "level": 1,
+ "segments": [
+  {
+   "at": "doc",
+   "text": "Ok so, this is the A2UI page in the CopilotKit docs, for Agno with React. And I have implemented this page in my project."
+  },
+  {
+   "at": "ide",
+   "text": "This is my project, this is the exact code from the doc, umm, with the quickstart agent plugged in."
+  },
+  {
+   "at": "demo",
+   "text": "Moving on to the demo. So I asked for a card with a title and a badge."
+  },
+  {
+   "at": "+",
+   "text": "The agent just says it can't render a card here, and no A2UI surface ever shows up."
+  },
+  {
+   "at": "evidence#1",
+   "text": "This is the runtime code, my agent is never defined on the page."
+  },
+  {
+   "at": "evidence#2",
+   "text": "And here it says any A2UI output from the agent just renders."
+  },
+  {
+   "at": "notepad",
+   "text": "So basically, uh, there's no Agno agent code on this page at all, and nothing tells you how an Agno agent should send A2UI."
+  },
+  {
+   "at": "+",
+   "text": "With the quickstart agent, the reply is only text."
+  },
+  {
+   "at": "+",
+   "text": "That's the problem here, please have a look."
+  }
+ ]
+}

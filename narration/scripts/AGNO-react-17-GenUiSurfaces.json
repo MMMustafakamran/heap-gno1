@@ -1,0 +1,23 @@
+{
+ "clip": "AGNO-react-17-GenUiSurfaces",
+ "finding": "agno-react GenUiSurfaces",
+ "level": 2,
+ "segments": [
+  {
+   "at": "doc",
+   "text": "Ok so, this is the surfaces page in the CopilotKit docs, for Agno with React. And I have implemented this page in my project."
+  },
+  {
+   "at": "ide",
+   "text": "This is my project, this is the code from the doc."
+  },
+  {
+   "at": "demo",
+   "text": "Moving on to the demo. So the featured products row renders, but umm, the items are empty, no names, no images and zero price."
+  },
+  {
+   "at": "+",
+   "text": "So yeah, kindly check this and fix it."
+  }
+ ]
+}

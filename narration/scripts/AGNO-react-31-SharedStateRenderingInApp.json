@@ -1,0 +1,23 @@
+{
+ "clip": "AGNO-react-31-SharedStateRenderingInApp",
+ "finding": "agno-react SharedStateRenderingInApp",
+ "level": 2,
+ "segments": [
+  {
+   "at": "doc",
+   "text": "Ok so, this is the render agent state in your app page in the CopilotKit docs, for Agno with React. And I have implemented this page in my project."
+  },
+  {
+   "at": "ide",
+   "text": "This is my project, this is the code from the doc."
+  },
+  {
+   "at": "demo",
+   "text": "Moving on to the demo. So the canvas shows up, but the agent says it can't see the canvas, and uh, it never marks the item as done."
+  },
+  {
+   "at": "+",
+   "text": "Alright, that's the issue, kindly sort it out."
+  }
+ ]
+}

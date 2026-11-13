@@ -1,0 +1,23 @@
+{
+ "clip": "AGNO-react-32-SharedStateAgentReadonly",
+ "finding": "agno-react SharedStateAgentReadonly",
+ "level": 2,
+ "segments": [
+  {
+   "at": "doc",
+   "text": "Ok so, this is the agent read only context page in the CopilotKit docs, for Agno with React. And I have implemented this page in my project."
+  },
+  {
+   "at": "ide",
+   "text": "This is my project, this is the code from the doc."
+  },
+  {
+   "at": "demo",
+   "text": "Moving on to the demo. So the page doesn't load at all, umm, Next shows module not found for the demo layout file."
+  },
+  {
+   "at": "+",
+   "text": "That's what's breaking here, kindly have it fixed."
+  }
+ ]
+}

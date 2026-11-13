@@ -1,0 +1,39 @@
+{
+ "clip": "AGNO-react-26-A2uiDynamicSchema",
+ "finding": "agno-react A2uiDynamicSchema",
+ "level": 1,
+ "segments": [
+  {
+   "at": "doc",
+   "text": "Ok so, this is the dynamic schema A2UI page in the CopilotKit docs, for Agno with React. And I have implemented this page in my project."
+  },
+  {
+   "at": "ide",
+   "text": "This is my project, this is the exact code from the doc."
+  },
+  {
+   "at": "demo",
+   "text": "Moving on to the demo. Umm, the page doesn't even build, it fails with module not found for the chat file."
+  },
+  {
+   "at": "evidence#1",
+   "text": "This is the import, the chat file is never shown on the page."
+  },
+  {
+   "at": "evidence#2",
+   "text": "And this opt-out step is actually LangGraph code, on the Agno page."
+  },
+  {
+   "at": "notepad",
+   "text": "So basically, the chat file and the card, badge and button components are missing, so the route fails to build."
+  },
+  {
+   "at": "+",
+   "text": "And the Agno agent also imports a header helper and a tools module, uh, that the page never shows."
+  },
+  {
+   "at": "+",
+   "text": "So yeah, kindly check this and fix it."
+  }
+ ]
+}

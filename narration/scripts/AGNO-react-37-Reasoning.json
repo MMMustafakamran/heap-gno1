@@ -1,0 +1,39 @@
+{
+ "clip": "AGNO-react-37-Reasoning",
+ "finding": "agno-react Reasoning",
+ "level": 1,
+ "segments": [
+  {
+   "at": "doc",
+   "text": "Ok so, this is the reasoning page in the CopilotKit docs, for Agno with React. And I have implemented this page in my project."
+  },
+  {
+   "at": "ide",
+   "text": "This is my project, this is the exact code from the doc."
+  },
+  {
+   "at": "demo",
+   "text": "Moving on to the demo. So I asked it a step by step math question."
+  },
+  {
+   "at": "+",
+   "text": "It gave a normal answer, but umm, no reasoning card showed up at all."
+  },
+  {
+   "at": "evidence#1",
+   "text": "Here the page says the card just appears if the model emits reasoning."
+  },
+  {
+   "at": "notepad",
+   "text": "So basically, there's no Agno agent on this page, and the reasoning custom agent is never set up."
+  },
+  {
+   "at": "+",
+   "text": "The quickstart agent has reasoning turned off, so uh, the card never shows."
+  },
+  {
+   "at": "+",
+   "text": "That's the problem here, please have a look."
+  }
+ ]
+}

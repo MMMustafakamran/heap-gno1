@@ -1,0 +1,26 @@
+[project]
+name = "backend"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "mustafa kamran", email = "mmmustafakamran@gmail.com" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "ag-ui-protocol>=1.0.0",
+    "agno>=3.2.0",
+    "fastapi>=0.162.5",
+    "greenlet>=3.5.6",  # HARNESS (G1): doc says pip install sqlalchemy only; sqlalchemy 2.1 no longer pulls greenlet and agno.db.sqlite crashes on import without it
+    "openai>=3.50.0",
+    "python-multipart>=0.0.33",  # HARNESS: doc install step omits it; AgentOS crashes without it (FINDINGS.md #1)
+    "sqlalchemy>=2.1.8",
+    "uvicorn>=0.54.0",
+]
+
+[project.scripts]
+backend = "backend:main"
+
+[build-system]
+requires = ["uv_build>=0.12.5,<0.13.0"]
+build-backend = "uv_build"
